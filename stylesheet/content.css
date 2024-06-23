@@ -65,7 +65,7 @@ body {
     mix-blend-mode: difference;
 }
 
-.screening:hover {
+.hover:hover {
     color: white;
 }
 
@@ -89,9 +89,6 @@ body {
     mix-blend-mode: normal;
 }
 
-.scr-num:hover {
-    color: transparent;
-}
 
 /* Films lists */
 
@@ -194,4 +191,9 @@ body {
     -webkit-text-stroke-width: 2px;
 
     mix-blend-mode: difference;
+    height: fit-content;
+}
+
+#contact {
+    cursor: pointer;
 }
