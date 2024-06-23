@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
-
 @font-face {
     font-family: "Akzidenz-Grotesk Pro";
     font-style: normal;
     src: url(../font/akzidenzgroteskpro_regular.ttf) format('ttf');
     font-style: normal;
+
+    font-weight: 1 1000;
 }
 
 ::selection {
@@ -58,9 +58,11 @@ body {
     gap: 12px;
     align-self: stretch;
     color: transparent;
+
     -webkit-text-stroke-color: rgb(255, 255, 255);
     font-family: "Akzidenz-Grotesk Pro";
     font-style: normal;
+    font-weight: 400;
 
     mix-blend-mode: difference;
 }
@@ -119,9 +121,12 @@ body {
 
     color: rgb(255, 255, 255);
 
-    font-family: "Martian Mono SemiCondensed";
-    font-style: normal;
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 87.5;
 }
 
 .film h1 {
@@ -192,6 +197,7 @@ body {
 
     mix-blend-mode: difference;
     height: fit-content;
+    overflow-wrap: break-word;
 }
 
 #contact {
