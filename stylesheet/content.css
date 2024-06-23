@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+
+@font-face {
+    font-family: "Akzidenz-Grotesk Pro";
+    font-style: normal;
+    src: url(../font/akzidenzgroteskpro_regular.ttf) format('ttf');
+    font-style: normal;
+}
+
+::selection {
+    color: #000000;
+    background: white;
+}
+
+body {
+    background: #EBEBEB;
+
+    width: 100vw;
+    height: 100dvh;
+
+    display: flex;
+    align-items: stretch;
+
+    /* overscroll-behavior: none; */
+}
+
+#name {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+
+    font-size: 60px;
+    line-height: 90%;
+    -webkit-text-stroke-width: 2px;
+}
+
+/* Screening lists */
+
+.screenings-lists {
+    display: flex;
+    width: calc(50vw - 12px);
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.screening {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-self: stretch;
+    color: transparent;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    font-family: "Akzidenz-Grotesk Pro";
+    font-style: normal;
+
+    mix-blend-mode: difference;
+}
+
+.screening h1 {
+    font-size: 120px;
+    line-height: 80%;
+    overflow-wrap: break-word;
+    -webkit-text-stroke-width: 4px;
+}
+
+.screening p {
+    font-size: 60px;
+    line-height: 90%;
+    -webkit-text-stroke-width: 2px;
+}
+
+.scr-num {
+    -webkit-text-stroke-color: #FF0054;
+    font-size: 120px;
+    -webkit-text-stroke-width: 4px;
+    mix-blend-mode: normal;
+}
+
+/* Films lists */
+
+.films-lists {
+    position: fixed;
+    left: 50vw;
+
+    mix-blend-mode: difference;
+}
+
+.film-set {
+    display: flex;
+    width: 50vw;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.film {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+    color: rgb(255, 255, 255);
+
+    font-family: "Martian Mono SemiCondensed";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.film h1 {
+    font-size: 24px;
+}
+
+.film p {
+    font-size: 16px;
+    line-height: 120%;
+}
+
+#film-nachalo {
+    display: none;
+}
+
+/* Fugue logo */
+
+
+.f-logo-p {
+    position: fixed;
+
+    width: 30dvh;
+    height: 30dvh;
+
+    border-radius: 50%;
+    background: #000;
+
+    z-index: -1;
+}
+
+.f-logo-p:nth-of-type(1) {
+    top: calc(50dvh - 30dvh);
+    left: calc(50vw - 15dvh);
+}
+
+.f-logo-p:nth-of-type(2) {
+    top: 50dvh;
+    left: calc(50vw - 15dvh);
+}
+
+.f-logo-p:nth-of-type(3) {
+    top: calc(50dvh - 15dvh);
+    left: 50vw;
+}
+
+.f-logo-p:nth-of-type(4) {
+    top: calc(50dvh - 15dvh);
+    left: calc(50vw - 30dvh);
+}
