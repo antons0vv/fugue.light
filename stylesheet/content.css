@@ -24,7 +24,7 @@ body {
     /* overscroll-behavior: none; */
 }
 
-#name {
+.link {
     position: fixed;
     bottom: 12px;
     right: 12px;
@@ -32,7 +32,14 @@ body {
     font-size: 60px;
     line-height: 90%;
     -webkit-text-stroke-width: 2px;
+
+    text-decoration: none;
 }
+
+.link:hover {
+    color: white;
+}
+
 
 /* Screening lists */
 
@@ -58,6 +65,10 @@ body {
     mix-blend-mode: difference;
 }
 
+.screening:hover {
+    color: white;
+}
+
 .screening h1 {
     font-size: 120px;
     line-height: 80%;
@@ -78,6 +89,10 @@ body {
     mix-blend-mode: normal;
 }
 
+.scr-num:hover {
+    color: transparent;
+}
+
 /* Films lists */
 
 .films-lists {
@@ -94,6 +109,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+
+    transition: 0.3s ease-in-out;
 }
 
 .film {
@@ -125,12 +142,8 @@ body {
 
 /* Fugue logo */
 
-
 .f-logo-p {
     position: fixed;
-
-    width: 30dvh;
-    height: 30dvh;
 
     border-radius: 50%;
     background: #000;
@@ -139,21 +152,46 @@ body {
 }
 
 .f-logo-p:nth-of-type(1) {
+    width: 30dvh;
+    height: 30dvh;
+
     top: calc(50dvh - 30dvh);
     left: calc(50vw - 15dvh);
 }
 
 .f-logo-p:nth-of-type(2) {
+    width: 30dvh;
+    height: 30dvh;
+
     top: 50dvh;
     left: calc(50vw - 15dvh);
 }
 
 .f-logo-p:nth-of-type(3) {
+    width: 30dvh;
+    height: 30dvh;
+
     top: calc(50dvh - 15dvh);
     left: 50vw;
 }
 
 .f-logo-p:nth-of-type(4) {
+    width: 30dvh;
+    height: 30dvh;
     top: calc(50dvh - 15dvh);
     left: calc(50vw - 30dvh);
+}
+
+/* About page */
+
+#about,
+#contact {
+    width: 50vw;
+    padding: 12px;
+
+    font-size: 60px;
+    line-height: 90%;
+    -webkit-text-stroke-width: 2px;
+
+    mix-blend-mode: difference;
 }
