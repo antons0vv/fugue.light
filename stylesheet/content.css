@@ -7,7 +7,7 @@
 
 ::selection {
     color: #ffffff;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(0, 0, 0);
     background: none;
 }
 
@@ -37,7 +37,7 @@ a {
     font-style: normal;
     font-weight: 400;
 
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: #FF0054;
 
     font-size: 60px;
     line-height: 90%;
@@ -47,7 +47,7 @@ a {
 }
 
 .link:hover {
-    color: rgb(0, 0, 0);
+    color: #FF0054;
 }
 
 /* Screening lists */
@@ -68,16 +68,16 @@ a {
     align-self: stretch;
     color: transparent;
 
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: #FF0054;
+    filter: invert(1);
     font-family: "Akzidenz-Grotesk Pro";
     font-style: normal;
     font-weight: 400;
-
     mix-blend-mode: difference;
 }
 
 .hover:hover {
-    color: white;
+    color: #FF0054;
 }
 
 .screening h1 {
@@ -94,10 +94,10 @@ a {
 }
 
 .scr-num {
-    -webkit-text-stroke-color: #FF0054;
+    -webkit-text-stroke-color: #000000;
     font-size: 120px;
     -webkit-text-stroke-width: 4px;
-    mix-blend-mode: normal;
+    mix-blend-mode: difference;
 }
 
 /* Films lists */
@@ -202,8 +202,6 @@ a {
     font-size: 60px;
     line-height: 90%;
     -webkit-text-stroke-width: 2px;
-
-
     overflow-wrap: break-word;
 
 }
@@ -217,7 +215,8 @@ a {
     font-style: normal;
     font-weight: 400;
 
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: #FF0054;
+    filter: invert(1);
     mix-blend-mode: difference;
 }
 
