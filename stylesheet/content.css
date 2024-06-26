@@ -44,7 +44,7 @@
     .screening h1,
     .scr-num {
         font-size: 90px;
-        -webkit-text-stroke-width: 4px;
+        -webkit-text-stroke-width: 3px;
     }
 
     .film h1 {
@@ -148,6 +148,8 @@ a {
     font-style: normal;
     font-weight: 400;
     mix-blend-mode: difference;
+
+    overflow-wrap: break-word;
 }
 
 .hover:hover {
@@ -156,7 +158,6 @@ a {
 
 .screening h1 {
     line-height: 80%;
-    overflow-wrap: break-word;
 }
 
 .screening p {
@@ -164,7 +165,8 @@ a {
 }
 
 .scr-num {
-    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #FF0054;
+    filter: invert(1);
     mix-blend-mode: difference;
 }
 
@@ -209,7 +211,13 @@ a {
     line-height: 120%;
 }
 
-#film-nachalo {
+#film-nachalo,
+#film-nature,
+#film-time,
+#film-human,
+#film-light,
+#film-city,
+#film-sound {
     display: none;
 }
 
@@ -263,12 +271,11 @@ a {
     padding: 12px;
 
     line-height: 90%;
-    overflow-wrap: break-word;
-
 }
 
 #about {
     mix-blend-mode: difference;
+    overflow-wrap: break-word;
 }
 
 #contact {
@@ -279,8 +286,5 @@ a {
     -webkit-text-stroke-color: #FF0054;
     filter: invert(1);
     mix-blend-mode: difference;
-}
-
-#contact p {
-    cursor: pointer;
+    overflow-wrap: break-word;
 }

@@ -11,7 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    showFilmSet("#nachalo", "#film-nachalo")
+    showFilmSet("#nachalo", "#film-nachalo");
+    showFilmSet("#human", "#film-human");
+    showFilmSet("#nature", "#film-nature");
+    showFilmSet("#time", "#film-time");
+    showFilmSet("#light", "#film-light");
+    showFilmSet("#sound", "#film-sound");
+    showFilmSet("#city", "#film-city");
 
     // Changing logo
 
