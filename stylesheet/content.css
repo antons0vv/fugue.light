@@ -15,9 +15,12 @@
         -webkit-text-stroke-width: 1px;
     }
 
-    .screening h1,
-    .scr-num {
+    .screening h1 {
         font-size: 60px;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .scr-num {
         -webkit-text-stroke-width: 2px;
     }
 
@@ -41,9 +44,12 @@
         -webkit-text-stroke-width: 2px;
     }
 
-    .screening h1,
-    .scr-num {
+    .screening h1 {
         font-size: 90px;
+        -webkit-text-stroke-width: 3px;
+    }
+
+    .scr-num {
         -webkit-text-stroke-width: 3px;
     }
 
@@ -66,9 +72,12 @@
         -webkit-text-stroke-width: 2px;
     }
 
-    .screening h1,
-    .scr-num {
+    .screening h1 {
         font-size: 120px;
+        -webkit-text-stroke-width: 4px;
+    }
+
+    .scr-num {
         -webkit-text-stroke-width: 4px;
     }
 
@@ -167,10 +176,30 @@ a {
     line-height: 90%;
 }
 
+.scr-num-cont {
+    position: fixed;
+    display: flex;
+
+    width: 58dvh;
+    height: 20dvh;
+
+    top: calc(50dvh - 11dvh);
+    left: calc(50vw - 29dvh);
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    z-index: -1;
+}
+
 .scr-num {
+    font-size: 20dvh;
+    font-family: "Akzidenz-Grotesk Pro";
+    font-style: normal;
+    font-weight: 400;
     -webkit-text-stroke-color: #FF0054;
-    filter: invert(1);
-    mix-blend-mode: difference;
 }
 
 /* Films lists */
